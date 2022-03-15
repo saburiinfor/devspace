@@ -1,53 +1,51 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
-
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    padding:0;
+    margin:0;
 }
-body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#252930 50%, #5372F0 50%);
+body
+{
+    background-color: #130f40;
+    background-size:cover;
+    display:flex;
 }
-::selection{
-    color: #fff;
-    background: #5372F0;
+.container
+{
+position: relative;
+margin-top: 100px;
+width: 450px;
+height: auto;
+background: #dddbdb;
+border-radius:5px ;
 }
-button{
-    border: none;
+.label
+{
+    padding: 20px 130px;
+    font-size:35px;
+    font-weight:bold;
+    color:#130f40;
+
+}
+.login_form
+{
+    padding: 20px 40px;
+}
+.login_form .font
+{
+    font-size: 18px;
+    color:#130f40;
+    margin: 5px 0;
+}
+.login_form .inout
+{
+    margin:100px auto;
+    padding:0 5px;
+    height:40px;
+    width:350px;
+    font-size: 18px;
     outline: none;
-    font-size: 50px;
-    color: #5372F0;
-    padding: 23px 44px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
+    border: 1px solid rgb(238, 216, 142);
 }
-a:link, a:visited {
-    position: relative;
-    top: 50%;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
+login_form.font2
+{
+    margin-top: 30px;
 }
-
-a:hover, a:active {
-    background-color: green;
-    color: white;
-}
-
