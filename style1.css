@@ -1,0 +1,36 @@
+body{
+    margin: 0;
+    padding: 0;
+    font family: sans-serif;
+   background-image: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+   width: 434px;
+   height: 289.333px;
+   margin: 0px;
+    
+}
+
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: white;
+    
+}
+
+.center h1{
+text-align: center;
+padding: 0 0 20px 0;
+
+}
+
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+input[type="submit"]{
+    background: #2691d9;
+}
+
