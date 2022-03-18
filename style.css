@@ -1,53 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
-
-
-
-*{
+* {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: sans-serif;
 }
-body{
+
+body {
+    background-image: url(https://w0.peakpx.com/wallpaper/108/670/HD-wallpaper-black-thumbnail.jpg);
+}
+
+.main {
     display: flex;
-    align-items: center;
     justify-content: center;
-    min-height: 100vh;
-    background: linear-gradient(#252930 50%, #5372F0 50%);
-}
-::selection{
-    color: #fff;
-    background: #5372F0;
-}
-button{
-    border: none;
-    outline: none;
-    font-size: 50px;
-    color: #5372F0;
-    padding: 23px 44px;
-    border-radius: 10px;
-    cursor: pointer;
-    font-weight: 500;
-    background: #fff;
-    box-shadow: 0 0 20px 0 rgba(0,0,0,0.1);
-}
-a:link, a:visited {
-    position: relative;
-    top: 50%;
-    bottom: 50px;
-    left: 50px;
-    right: 50px;
-    background-color: white;
-    color: black;
-    border: 2px solid green;
-    padding: 10px 20px;
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
+    border-radius: 8px;
+    margin-top: 200px;
+    margin-left: 560px;
+    padding: 20px;
+    height: 200px;
+    width: 200px;
+    color: antiquewhite;
 }
 
-a:hover, a:active {
-    background-color: green;
-    color: white;
+.border {
+    border: 1px solid rgb(61, 59, 59);
 }
 
+.name {
+    margin-top: 20px;
+}
+
+input {
+    color: aliceblue;
+    background-color: black;
+    text-align: center;
+    border-radius: 5px;
+}
+
+h1 {
+    color: rgb(211, 201, 201);
+}
+
+button {
+    height: 30px;
+    width: 220px;
+    border-radius: 0px;
+    font-size: 13px;
+    font-style: italic;
+    font-weight: bold;
+    background-color: black;
+    color: azure;
+    border-style: 1px solid white;
+}
