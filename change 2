@@ -1,0 +1,748 @@
+import React, {useEffect} from 'react';
+import img1 from "../../../public/images/bannerImgs/lab_test_service.jpg";
+import img5 from "../../../public/images/bannerImgs/why_choose.jpg";
+import img6 from "../../../public/images/bannerImgs/service/COVID_Test.jpg";
+import img7 from "../../../public/images/bannerImgs/service/Diabetes_test.jpg";
+import img8 from "../../../public/images/bannerImgs/service/Fullbody_checkup.jpg";
+import img9 from "../../../public/images/bannerImgs/service/Thyroid_test.jpg";
+import img10 from "../../../public/images/bannerImgs/service/Pediatric_Healthcheck.jpg";
+import img11 from "../../../public/images/bannerImgs/service/Lifestyle_related.jpg";
+import img12 from "../../../public/images/bannerImgs/service/Senircitizen_health.jpg";
+import img13 from "../../../public/images/bannerImgs/service/Lcalcium-Test.jpg";
+import img14 from "../../../public/images/bannerImgs/service/LCholesterol-test.jpg";
+import img15 from "../../../public/images/bannerImgs/service/LDiabetes-Test.jpg";
+import img16 from "../../../public/images/bannerImgs/service/LLipid-Test.jpg";
+import img18 from "../../../public/images/bannerImgs/service/LKidney-Function-Test.jpg";
+import img19 from "../../../public/images/servicebanner/Lab-Test.jpg";
+import img20 from "../../../public/images/bannerImgs/service/LStool-Test.jpg";
+import './accordionService.module.scss';
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import Image from "next/image";
+import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
+import {faBandcamp} from "@fortawesome/free-brands-svg-icons";
+import {faCheck} from "@fortawesome/free-solid-svg-icons";
+import Accordion from "react-bootstrap/Accordion";
+import Carousel from "react-multi-carousel";
+
+
+export default function LabTestPage() {
+  useEffect(() => {
+    window.jQuery = require('../../assets/jquery')
+  }, []);
+  
+  const banner = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 1,
+      },
+    },
+  }
+  const labtest = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 5,
+      },
+    },
+  }
+  const top = {
+    responsive: {
+      0: {
+        items: 1,
+      },
+      450: {
+        items: 1,
+      },
+      600: {
+        items: 1,
+      },
+      1000: {
+        items: 6,
+      },
+    },
+  }
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1280 },
+      items: 5,
+      partialVisibilityGutter: 40
+    },
+    tablet: {
+      breakpoint: { max: 1280, min: 464 },
+      items: 3,
+      partialVisibilityGutter: 30
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      partialVisibilityGutter: 30
+    },
+  };
+  
+  return (
+    <div>
+      <Head>
+        <title>Book Lab Tests Online - Home Sample Collection - ConferKare</title>
+        <meta name="keywords"
+              content="glucose test,fasting blood glucose,high blood sugar levels,fasting glucose levels,fasting blood sugar test,glucose blood test,random sugar level,fasting sugar level,fbs blood test,rbs blood test,sugar level test,random blood sugar test,sugar check,glucose blood levels,blood glucose fasting level,test sugar at home,t3 t4 tsh test,cbc esr test,hemogram test,hbsag blood test,tft testing,tsh blood test,haemogram test,normal blood count,hepatitis b test,complete blood count test,rft blood test,hbs test,t3 t4 tsh,wbc count ranges,complete blood count,lft blood test,total blood count,lft normal values,complete hemogram,serum ferritin test,ferritin blood test,blood group test,ferritin test,vitamin d tests,blood type test,vitamin d test,ra factor test,prl test,hscrp test,sgot blood test,fsh test,ast test,sgpt blood test,hs crp test,sgot sgpt test,total cholestrol test,crp quantitative test,c reactive protein test,cbct scan,widal blood test,triglycerides test,psma pet scan,ct scan stomach,ct thorax scan,cect scan,pet ct scan,ct scan head,ct scan brain,chest ct scan,alp test,alkaline phosphatase test,pbs test,vdrl blood test,triglyceride test,urine culture test,fasting glucose test,blood sugar reading,random blood glucose level,fasting blood glucose test,random glucose test,check blood sugar,fasting sugar test,sugar level check,sugar test near me,random blood glucose test,random sugar test,blood sugar level test,glucose check,sugar test lab near me,sugar profile test,blood sugar test lab near me,sugar check at home,random sugar reading,hbv viral load test,hbv dna pcr,cbc interpretation,thyroid test online,hepatitis b core antibodies,ft4 tsh test,cbc mp test,wbc blood count,lft test near me,cbc lft test,cbc crp blood test,baby thyroid test,cbc esr blood test,hbc blood test,t3 t4 tsh blood test,tsh ultrasensitive test,thyroid stimulating hormone test,kft lft test,fbc blood test,lft kft test,hemogram blood test,lft rft test,blood count test,t4 tsh test,hb cbc test,tsh receptor antibody test,complete haemogram test,h bs ag test,cbc ps test,hypothyroid test,cbc crp test,cbc test near me,ultra tsh test,anti hbs test,total blood count test,hbsag elisa test,hbv dna test,hbsag rapid test,hbv dna quantitative test,test for liver enzymes,kft blood test,full blood count,abo blood test,blood test for gout,serum iron tests,ca 125 lab test,serum uric acid test,urine acid test,blood group test online,uric acid home test,iron test,serum potassium test,cbc esr crp test,cip blood test,sodium blood test,alt blood test,serum crp test,cbc with esr blood test,ast blood test,tc dc esr blood test,k+ blood test,fsh and lh test,sodium test,potassium blood test,serum sodium test,ast sgot blood test,esr crp test,crp qualitative test,crp turbilatex test,potassium test,hs crp blood test,fsh lh test,blood test for inflammation,sgpt alt test,sodium potassium test,serology crp test,esr westergren test,esr and crp test,cbp esr test,crp c reactive protein test,c reactive protein blood test,fsh lh prolactin test,pulmonary embolism ct scan,tomography scan,cone beam ct scan,teeth ct scan,16 slice ct scan,ct scan of throat,dental scan,cbc widal test,cone beam ct scan near me,normal brain ct scan,triglycerides blood test,spiral ct scan,urine rm test,whole abdomen ct scan,mp widal test,cect test,ct scan of face,typhoid fever tests,ct scan sinus paranasal,confirmatory test of dengue,ct scan lower abdomen,cardiac ct scan,cect chest test,dengue antibody igm,ct scan nose,ctpa scan,ct scan for headache,ct whole abdomen,64 slice ct scan,orbital ct scan,heart ct scan,cect thorax test,dengue igm test,eye ct scan,coronal ct scan,ct scan spine,3d ct scan,elisa test for dengue,coronary ct scan,ct scan of ear,sinus ct scan,ct scan knee,ct scan of neck,dengue serology test,pelvic ct scan,whole body pet ct scan,typhoid antigen test,ct scan temporal bone,ct body scan,blood albumin test,phosphatase blood test,hbe ag test,albumin serum test,hdl cholesterol test,urine routine and culture test,urine culture sensitivity test,urine cs test,hdl blood test,ketone blood test,ldl test,seminal analysis,blood cholesterol test,semen fructose test"/>
+        <meta name="description"
+              content="Get your lab tests done at the comfort of your home. Complete test packages at exclusive discounts. Samples are collected from home. Book now!"/>
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org/",
+            "@type": "Product",
+            "name": "Online Lab Test Appointment Booking India | ConferKare",
+            "image": "https://conferkare.com/lab-test",
+            "description": "The quality research facility with groundbreaking testing equipment and innovation at ConferKare provides various online lab test bookings in India.",
+            "brand": "ConferKare"
+          }`}
+        </script>
+        <script type="application/ld+json">
+          {`{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            "mainEntity": [{
+              "@type": "Question",
+              "name": "Why should I get my lab tests done with ConferKare?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ConferKare is a quality research facility with groundbreaking testing equipment and innovation. Our lab has inflexible quality conventions to guarantee your tests are as exact as expected. The whole cycle from sample collection to report delivery is taken care of by our staff to guarantee consistent help."
+              }
+            },{
+              "@type": "Question",
+              "name": "What are the tests you offer?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "We have a broad list of tests covering a more significant part of most patients regular testing needs alongside a few preventive medical care packages. Kindly browse the test list for the name of the test you need. Or else reach us directly."
+              }
+            },{
+              "@type": "Question",
+              "name": "How do I book an appointment for a lab test?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Visit the page https://conferkare.com/login and enter your credentials to log in to your ConferKare profile. If you are a new user, then click the sign-up option. Once done, go through the test list and select your preferred test."
+              }
+            },{
+              "@type": "Question",
+              "name": "Does ConferKare offer general Health checkup & services?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes. We have doctors & specialists at our clinic to offer you general healthcare checkup and services. Also, you have the option of online doctor consultation."
+              }
+            },{
+              "@type": "Question",
+              "name": "How to get my results/How can I receive my reports?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Reports depend on the type of tests opted for. Generally, reports are delivered within 24 hours of each test. You can check the result online, or collect from our lab, or have the option of getting it delivered at your doorstep."
+              }
+            }]
+          }`}
+        </script>
+      </Head>
+        <section className="banner labBanner" style={{position:'relative'}}>
+          <Image src={img19} layout={'fill'} objectFit="cover" quality={100}/>
+          <div className="text-banner">
+            <div className="s-lab-test">
+              <h2> The results you can trust</h2>
+            </div>
+          </div>
+        </section>
+      
+      <section className="common">
+        <div className="container-fluid">
+          <div className="section-title">
+            <h2>Top Booked <span>Health Packages</span></h2>
+          </div>
+          
+          <div className="row" style={{padding: '20px 0px'}}>
+            <Carousel
+              responsive={responsive}
+              ssr
+              autoPlay={true}
+              infinite={true}
+              showDots={false}
+              slidesToSlide={1}
+              renderButtonGroupOutside={true}
+              // infinite
+              // containerClass={'ck-carousel-panel'}
+              // itemClass="ck-carousel-panel"
+              // deviceType={''}
+            >
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img6} alt={'COVID Test'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}>COVID Test</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img7} alt={'Diabetes Test'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}>Diabetes Test</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img8} alt={'Full Body Check up'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}>Full Body Check up</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img10} alt={'Pediatric Health Check'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}>Pediatric Health check</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img9} alt={'Thyroid Test'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}>Thyroid Test</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img12} alt={'Senier Health Checkup'} className={"img-responsive"}/>
+                    <h4 style={{width: '100%'}}s>Senier Health Checkup</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+            
+            </Carousel>
+          
+          </div>
+        </div>
+      </section>
+      
+      <section className="lab_benifit">
+        <div className="container">
+          <div className="title mb-5 text-center rowpt">
+            <h3>ConferKare Lab Tests </h3>
+            <div className="content-section">
+              <p className={"txt-regular"}> ConferKare believes that our PCPs and doctors couldnot work without these labs. Every day, specialists and patients deal with the lab tests outcomes. Thus,
+                labs across the country are continually exploring, screening, analyzing, and diagnosing patients, keeping us healthy and aware. ConferKare brings quality and assured lab tests services
+                for all and providing <span>Blood Test Results Online.</span></p>
+              <p className={"txt-regular"}>To be healthy and deal with your ailments, you need to examine what happening inside your body sometimes. That is the place where ConferKare online lab tests
+                come in. We offer best in class significant<span>online blood testing services</span> in an expert set up, so you can forestall, distinguish, and oversee infection. We not just accept
+                order for online blood tests, gather the samples and convey reports to your home, yet besides offering the lab tests at an altogether lower cost than similar labs. </p>
+              <p className={"txt-regular"}> Maybe it is a <span>T3, T4, TSH test</span> for diagnosing thyroid, or a <span>Complete Blood Test Package</span>, ConferKare is your one-stop solution for
+                all your health care & needs. We aim to provide all the advantages of a pathology lab & diagnostic centre right from the comfort of your home. </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <section className="service">
+        <div className="container-fluid">
+          <div className="section-title">
+            <h2>Complete Health Checkup <span>Packages</span></h2>
+            <p>We provide complete health check-up packages and individual lab tests for you and your family</p>
+          </div>
+          
+          <div className="row">
+            <Carousel
+              responsive={responsive}
+              ssr
+              autoPlay={true}
+              infinite={true}
+              showDots={false}
+              slidesToSlide={1}
+              renderButtonGroupOutside={true}
+              // infinite
+              // containerClass={'ck-carousel-panel'}
+              // itemClass="ck-carousel-panel"
+              // deviceType={''}
+            >
+              
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img6} alt={'COVID Test'} className={"img-responsive"}/>
+                    <h3>COVID Test</h3>
+                    <p>Essential preventive screening tests to get insights into overall health.</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img1} alt={'Individual Test'} className={"img-responsive"}/>
+                    <h3>Individual Test</h3>
+                    <p>Select tests directly and schedule appointment for sample collection.</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img7} alt={'Diabetes Test'} className={"img-responsive"}/>
+                    <h3>Diabetes Test</h3>
+                    <p>Select tests directly and schedule appointment for sample collection.</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img8} alt={'Full Body Check-up'} className={"img-responsive"}/>
+                    <h3>Full Body Check Up </h3>
+                    <p>Get the essential COVID tests from ICMR approved Labs .</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img11} alt={'Life Style Related'} className={"img-responsive"}/>
+                    <h3>Life Style Related </h3>
+                    <p>Get the essential COVID tests from ICMR approved Labs .</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img10} alt={'Pediatric Health Check'} className={"img-responsive"}/>
+                    <h3>Pediatric Health Check </h3>
+                    <p>Get the essential COVID tests from ICMR approved Labs .</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img12} alt={'Senior Citizen Check-up'} className={"img-responsive"}/>
+                    <h3>Sen. Citizen CheckUp </h3>
+                    <p>Get the essential COVID tests from ICMR approved Labs .</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img9} alt={'Thyroid Test'} className={"img-responsive"}/>
+                    <h3>Thyroid Test</h3>
+                    <p>Get the essential COVID tests from ICMR approved Labs .</p>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+            
+            </Carousel>
+          
+          </div>
+        </div>
+      </section>
+      
+      <section className="process ">
+        <div className="container  ">
+          <div className="title mb-5 text-center">
+            <h3> How to book a Lab Test with ConferKare? </h3>
+          </div>
+          
+          <div className="row ">
+            <div className="col-md-4 step">
+              
+              <div className="row">
+                <div className="col-md-3">
+                  <p className="m-0 p-0">Step</p>
+                  <h3 className="m-0 p-0">01</h3>
+                
+                </div>
+                <div className="col-md-9">
+                  <h3><small> Select a test or package and book your appointment.</small></h3>
+                </div>
+              </div>
+            </div>
+            
+            <div className="col-md-4 step">
+              <div className="row">
+                <div className="col-md-3">
+                  <p className="m-0 p-0">Step</p>
+                  <h3 className="m-0 p-0">02</h3>
+                
+                </div>
+                <div className="col-md-9">
+                  <h3><small>Our certified Phlebotomist will visit your home for sample collection. </small></h3>
+                </div>
+              </div>
+            
+            </div>
+            
+            <div className="col-md-4 step">
+              
+              <div className="row">
+                <div className="col-md-3">
+                  <p className="m-0 p-0">Step</p>
+                  <h3 className="m-0 p-0">03</h3>
+                </div>
+                <div className="col-md-9">
+                  <h3><small>Get report online within 48 hours. </small></h3>
+                </div>
+              </div>
+            
+            </div>
+          
+          </div>
+        </div>
+      </section>
+      
+      <section className="why-choose-section">
+        <div className="container">
+          <div className="row">
+            <div className="col-md-4" style={{position: 'relative'}}>
+              <Image src={img5} layout={'fill'} objectFit="cover" quality={100}/>
+              <h2>Why choose ConferKare Lab Tests ? </h2>
+            </div>
+            <div className="col-md-8 para">
+              <p><span>Wide Selection of Tests:</span>ConferKare covers comprehensive tests like <span>glucose tests, total
+cholesterol test,</span> pregnancy tests, sensitivity tests, lipid profiles, liver profile, complete blood
+                count, VDRL test, <span>urine culture test</span> and that only the tip of the iceberg. Get a complete understanding of every one of these
+                tests, for example, blood test cost, when to step through the examinations, why it is required, who
+                should step through the test and what to do before taking the blood tests at home and order blood work
+                online at ConferKare. </p>
+              <p><span>Sample Collection at Home:</span> Book blood tests online from your home, and our expert & trained
+                phlebotomist will show up at the scheduled time to get your sample. When you complete the test, you
+                can check blood test report online. </p>
+              <p><span>Timely & Accurate Checkup:</span> Once the online sample collection is done successfully, the samples are sent
+                to labs for the further process. One can expect detailed & 100% accurate blood test results online within
+                the timeline. </p>
+              <p><span>Advanced Reports</span> Get all your symptomatic reports messaged straightforwardly to you with itemized
+                blood test reports and secure stockpiling to get to your clinical records on the web effectively. You can
+                check and get Your Blood Test Results Online at ConferKare anytime anywhere. </p>
+              <p><span> Full Body Health Checkup:</span> Keep your wellbeing and prosperity under check with elite Health Checkup
+                Packages like Men Health Package, Women Health Package, Vitamin Package, Health Package for
+                Corporate, Diabetes Packages, Packages for Senior Citizens and more. You can connect with us to know
+                more about our health check up and other online blood check up packages. You can also get the online
+                blood test report check facility at conferkare.</p>
+            </div>
+          </div>
+        </div>
+      
+      </section>
+      
+      <section className="benifit">
+        <div className="container">
+          <div className="title mb-5 text-center rowpt">
+            <h3> When can you opt for a Lab Tests at ConferKare? </h3>
+            <p> There is countless number of Lab tests. Laboratory tests check the sample of your blood, urine, or body
+              tissues. An expert or your primary care physician examines the test samples to check whether your
+              outcomes fall inside the normal range. The tests use a range since what is a usual contrast from
+              individual to individual. Many elements influence test results. Your PCP may likewise compare your test
+              results with results from past tests. However, Lab tests are frequently essential for a routine checkup to
+              search for changes in your wellbeing. </p>
+          </div>
+          <div className="row ">
+            <div className="col-md-12">
+              <div className="tab-content">
+                <p>There are few other legitimate reasons you should go for a lab test. These includes: </p>
+                <h5><FontAwesomeIcon icon={faCheck}/> For diagnosing a particular condition</h5>
+                <h5><FontAwesomeIcon icon={faCheck}/> For monitoring the efficacy of a treatment or medication</h5>
+                <h5><FontAwesomeIcon icon={faCheck}/> For screening </h5>
+                <h5><FontAwesomeIcon icon={faCheck}/> For researching a particular disease </h5>
+              
+              
+              </div>
+            
+            </div>
+          
+          
+          </div>
+        </div>
+      </section>
+      
+      <section className="lab_common">
+        <div className="container-fluid">
+          <div className="section-title">
+            <h2>Most Popular Test <span>By Risk</span></h2>
+          </div>
+          
+          <div className="row">
+            <Carousel
+              responsive={responsive}
+              ssr
+              autoPlay={true}
+              infinite={true}
+              showDots={false}
+              slidesToSlide={1}
+              renderButtonGroupOutside={true}
+              // infinite
+              // containerClass={'ck-carousel-panel'}
+              // itemClass="ck-carousel-panel"
+              // deviceType={''}
+            >
+              
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img13} alt={'Sleeplessness'} className={"img-responsive"}/>
+                    <h4>CalciumTest</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img14} alt={'Infection'} className={"img-responsive"}/>
+                    <h4>Cholesterol Test</h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img15} alt={'Bone and Joint pain'} className={"img-responsive"}/>
+                    <h4>Diabetes Test </h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img18} alt={'Digestion'} className={"img-responsive"}/>
+                    <h4>Kidney Function Test </h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img16} alt={'Immunity'} className={"img-responsive"}/>
+                    <h4>Lipid Test </h4><br/>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+              <div className="card mb-3 mb-lg-3">
+                <div className="offer">
+                  <div className="card-body">
+                    <Image src={img20} alt={'Heart'} className={"img-responsive"}/>
+                    <h4>Stool Test </h4>
+                    <a href="/login" className="btn secondary-btn">Book Now<FontAwesomeIcon icon={faBandcamp}/></a>
+                  </div>
+                </div>
+              </div>
+            </Carousel>
+          </div>
+        </div>
+      </section>
+      
+      <section className="lab-faq">
+        <div className="container-fluid">
+          <div className="title mb-5 text-center rowpt">
+            <h3> FAQs </h3>
+          </div>
+          <div className="row">
+            <div className="col-md-6">
+              <Accordion>
+                <Accordion.Item eventKey={"0"}>
+                  <Accordion.Header>Why should I get my lab tests done with ConferKare?</Accordion.Header>
+                  <Accordion.Body>
+                    ConferKare is a quality research facility with groundbreaking testing equipment and
+                    innovation. Our lab has inflexible quality conventions to guarantee your tests are as
+                    exact as expected. The whole cycle from sample collection to report delivery is taken
+                    care of by our staff to guarantee consistent help.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"1"}>
+                  <Accordion.Header>What are the tests you offer?</Accordion.Header>
+                  <Accordion.Body>
+                    We have a broad list of tests covering a more significant part of most patients
+                    regular testing needs alongside a few preventive medical care packages. Kindly
+                    browse the test list for the name of the test you need. Or else reach us directly.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"2"}>
+                  <Accordion.Header>How do I book an appointment for a lab test?</Accordion.Header>
+                  <Accordion.Body>
+                    Visit the page <a href="https://conferkare.com/login">https://conferkare.com/login</a> and enter your credentials to log in to
+                    your ConferKare profile. If you are a new user, then click the sign-up option. Once
+                    done, go through the test list and select your preferred test.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"3"}>
+                  <Accordion.Header>Are my health records and online consultation secured?</Accordion.Header>
+                  <Accordion.Body>
+                    At ConferKare, privacy is a priority. Health documents are kept entirely confidential,
+                    and to secure your personal data, we use rigorous encryption methods. You decide
+                    who in your record can access the details. Also, online consultation with us is fully
+                    confidential and private. To ensure that your consultations are properly stored, we
+                    are compliant with industry requirements.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+              
+              {/*<div className="accordion" id="accordion2">*/}
+              {/*  <div className="accordion-group">*/}
+              {/*    <div className="accordion-heading">*/}
+              {/*      <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">*/}
+              {/*        Why should I get my lab tests done with ConferKare?*/}
+              {/*      </a>*/}
+              {/*    </div>*/}
+              {/*    <div id="collapseOne" className="accordion-body collapse">*/}
+              {/*      <div className="accordion-inner">*/}
+              {/*        ConferKare is a quality research facility with groundbreaking testing equipment and*/}
+              {/*        innovation. Our lab has inflexible quality conventions to guarantee your tests are as*/}
+              {/*        exact as expected. The whole cycle from sample collection to report delivery is taken*/}
+              {/*        care of by our staff to guarantee consistent help.*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+              
+              {/*<div className="accordion" id="accordion3">*/}
+              {/*  <div className="accordion-group">*/}
+              {/*    <div className="accordion-heading">*/}
+              {/*      <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion3" href="#collapsethree">*/}
+              {/*        What are the tests you offer?*/}
+              {/*      </a>*/}
+              {/*    </div>*/}
+              {/*    <div id="collapsethree" className="accordion-body collapse">*/}
+              {/*      <div className="accordion-inner">*/}
+              {/*        We have a broad list of tests covering a more significant part of most patients*/}
+              {/*        regular testing needs alongside a few preventive medical care packages. Kindly*/}
+              {/*        browse the test list for the name of the test you need. Or else reach us directly.*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+              
+              {/*<div className="accordion" id="accordion4">*/}
+              {/*  <div className="accordion-group">*/}
+              {/*    <div className="accordion-heading">*/}
+              {/*      <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion4" href="#collapsefour">*/}
+              {/*        How do I book an appointment for a lab test?*/}
+              {/*      </a>*/}
+              {/*    </div>*/}
+              {/*    <div id="collapsefour" className="accordion-body collapse">*/}
+              {/*      <div className="accordion-inner">*/}
+              {/*        Visit the page <a href="https://conferkare.com/login">https://conferkare.com/login</a> and enter your credentials to log in to*/}
+              {/*        your ConferKare profile. If you are a new user, then click the sign-up option. Once*/}
+              {/*        done, go through the test list and select your preferred test.*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+            
+            </div>
+            <div className="col-md-6">
+              <Accordion>
+                <Accordion.Item eventKey={"0"}>
+                  <Accordion.Header>Does ConferKare offer general Health checkup & services?</Accordion.Header>
+                  <Accordion.Body>
+                    Yes. We have doctors & specialists at our clinic to offer you general healthcare
+                    checkup and services. Also, you have the option of online doctor consultation.
+                  </Accordion.Body>
+                </Accordion.Item>
+                <Accordion.Item eventKey={"1"}>
+                  <Accordion.Header>How to get my results/How can I receive my reports?</Accordion.Header>
+                  <Accordion.Body>
+                    Reports depend on the type of tests opted for. Generally, reports are delivered
+                    within 24 hours of each test. You can check the result online, or collect from our lab,
+                    or have the option of getting it delivered at your doorstep.
+                  </Accordion.Body>
+                </Accordion.Item>
+              </Accordion>
+              
+              {/*<div className="accordion" id="accordion5">*/}
+              {/*  <div className="accordion-group">*/}
+              {/*    <div className="accordion-heading">*/}
+              {/*      <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion5" href="#collapsefive">*/}
+              {/*        Does ConferKare offer general Health checkup & services?*/}
+              {/*      </a>*/}
+              {/*    </div>*/}
+              {/*    <div id="collapsefive" className="accordion-body collapse">*/}
+              {/*      <div className="accordion-inner">*/}
+              {/*        Yes. We have doctors & specialists at our clinic to offer you general healthcare*/}
+              {/*        checkup and services. Also, you have the option of online doctor consultation.*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+              
+              {/*<div className="accordion" id="accordion6">*/}
+              {/*  <div className="accordion-group">*/}
+              {/*    <div className="accordion-heading">*/}
+              {/*      <a className="accordion-toggle" data-toggle="collapse" data-parent="#accordion6" href="#collapsesix">*/}
+              {/*        How to get my results/How can I receive my reports?*/}
+              {/*      </a>*/}
+              {/*    </div>*/}
+              {/*    <div id="collapsesix" className="accordion-body collapse">*/}
+              {/*      <div className="accordion-inner">*/}
+              {/*        Reports depend on the type of tests opted for. Generally, reports are delivered*/}
+              {/*        within 24 hours of each test. You can check the result online, or collect from our lab,*/}
+              {/*        or have the option of getting it delivered at your doorstep.*/}
+              {/*      </div>*/}
+              {/*    </div>*/}
+              {/*  </div>*/}
+              {/*</div>*/}
+            
+            </div>
+          </div>
+        </div>
+      </section>
+      <section className="benifit"  >
+        <div className="container">
+          <div className="title mb-5  rowpt">
+            <h5> Popular Searches </h5>
+            <p> Blood Collection Online, Blood Report Check Online, Blood Report Online, Blood Results Online, Blood Diagnostic
+              Test, Blood Test Online Appointment, Blood Test Online Near Me, Blood Test Online Order, Blood Test Report
+              Online, Book Blood Test Online Near Me, Book Blood Work Online, Diagnostic Centre near Me for Blood Test, Full
+              Health Check Blood Test, Nearby Blood Test Labs, Online Appointment Blood Test, Online Blood Check Up, Online Blood
+              Sample Collection, Online Blood Sample Collection Near Me, Online Blood Test App, Online Blood Test
+              Appointment, Online Blood Test at Home, Online Blood Test Bhubaneswar, Online Blood Test Booking Near Me,
+              Online Blood Test Lab, Online Blood Test Packages, Online Blood Test Sample Collection, Online Blood Work
+              Appointment, Online Blood Work Booking, Online Booking for Blood Collection, Online Booking for Blood Work,
+              Online Booking of Blood Test, Online Home Blood Test, Online Labs for Blood Tests, Schedule Blood Test Online,
+              Online Labs for Blood Tests </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
