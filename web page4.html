@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<title>login</title>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!--popper js-->
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<style>
+    body {
+        background-image: url(https://codetheweb.blog/assets/img/posts/css-advanced-background-images/cover.jpg);
+        
+    }
+    
+</style>
+
+<div class="container"><br>
+    <h1 class="text-success text-center">SimpleeKare Health Internship Form</h1><br>
+    <div class="col-lg-8 m-auto d-block">
+        <form action="#" onsubmit="return validation()" class="bg-light">
+
+
+
+
+        <div class="form-group">
+            <label>username:</label>
+            <input type="text" name="user" class="form-control" autocomplete="off" id="user">
+            <span id="username" class="text.danger font-weight-bold"></span>
+        </div>
+
+        <div class="form-group">
+            <label>email</label>
+            <input type="text" name="email " autocomplete="off" id="emails" class="form-control">
+            <span id="email" class="text.denger font-weight-bold"></span>
+        </div>
+
+        <div class="font-group">
+            <label>password</label>
+            <input type="password" name="Password" autocomplete="off" id="pass" class="form-control">
+            <span id="password" class="text.denger font-weight-bold"></span>
+        </div><br>
+
+        <div class="font-group">
+            <label>Conform password</label>
+            <input type="password" name="conpassword" autocomplete="off" id="conpass" class="form-control">
+            <span id="password" class="text.denger font-weight-bold"></span>
+        </div>
+
+        <br><br><br>
+
+        <center><input type="submit" value="submit" class="btn btn-success"></center>
+
+        </form>
+    </div>
+</div>
+<script type="text/javascript">
+    function validation() {
+        var user = document.getElementById('user').value;
+        var email = document.getElementById('emails').value;
+        var password = document.getElementById('pass').value;
+        var conpassword = document.getElementById('conpass').value;
+console.log(user);
+        if (user == "") {
+            document.getElementById('username').innerText = "**please fill the username field";
+            return false;
+        }
+        if ((user.length <= 2) || (user.length > 20)) {
+            document.getElementById('username').innerHTML = "**user lenght must be between 2 and 20";
+            return false;
+
+        }return false;
+        if (!isNaN(user)) {
+            document.getElementById('username').innerHTML = "**only characters are allowed";
+            return false;
+            if ((email.length <= 2) || (user.length > 20)) {
+                document.getElementById('username').innerHTML = "**user lenght must be between 2 and 20";
+                return false;
+
+            }
+            
+
+
+            if (email == "") {
+                document.getElementById('email').innerHTML = "**please fill the email field";
+                return false;
+                if (email.indexOf('@') <= 0) {
+                    document.getElementById('emailid').innerHTML = "**@ invalid position";
+                    return false;
+                }
+                if (email.charAt(email.length - 4) != '.' && email.charAt(email.length - 3) != '.')
+                    document.getElementById('emailid').innerHTML = "**. invalid position";
+                return false;
+
+            }
+            
+
+            if (password == "") {
+                document.getElementById('password').innerHTML = "**please fill the password field";
+                return false;
+            }
+
+
+            if ((pass.length <= 5) || (pass.length > 20)) {
+                document.getElementById('password').innerHTML = "**password lenght must be between 5 and 20";
+                return false;
+            }
+            
+
+            if (confirmpass == "") {
+                document.getElementById('password').innerHTML = "password are not matching";
+            }
+
+
+
+            if (conpassword == "") {
+                document.getElementById('password').innerHTML = "**please fill the conpassword field";
+                return false;
+
+            }
+        }
+
+    }
+    </script>
+</body>
+
+</html>
+
+
