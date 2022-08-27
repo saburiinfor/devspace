@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cb5f3027-5192-400f-825b-cae88844d6f6" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ignoreFolder/ravitest.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/ignoreFolder/ravitest.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ignoreFolder/ravitest.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,7 +95,7 @@
       <updated>1638603474548</updated>
       <workItem from="1638603481852" duration="3150000" />
       <workItem from="1661586123377" duration="1194000" />
-      <workItem from="1661593222718" duration="3119000" />
+      <workItem from="1661593222718" duration="4678000" />
     </task>
     <servers />
   </component>
